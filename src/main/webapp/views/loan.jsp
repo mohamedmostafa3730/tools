@@ -72,7 +72,7 @@
         <div class="mt-10">
           <a
             href="/"
-            class="btn-animate inline-block px-6 py-2 rounded-full bg-gray-700 text-white font-medium hover:bg-gray-800 transition"
+            class="w-full btn-animate inline-block px-6 py-2 rounded-full bg-gray-700 text-white font-medium"
           >
           Back to Home
           </a>

@@ -42,17 +42,17 @@
           </div>
           <div class="grid grid-cols-2 gap-4">
             <button
-              class="btn-animate px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium shadow-md transition"
+              class=" px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium shadow-md transition"
             >
               Uppercase
             </button>
             <button
-              class="btn-animate px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium shadow-md transition"
+              class=" px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium shadow-md transition"
             >
               Lowercase
             </button>
             <button
-              class="btn-animate px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium shadow-md transition col-span-2"
+              class=" px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium shadow-md transition col-span-2"
             >
               Clear
             </button>
@@ -62,7 +62,7 @@
         <div class="mt-10">
           <a
             href="/"
-            class="btn-animate inline-block px-6 py-2 rounded-full bg-gray-700 text-white font-medium hover:bg-gray-800 transition"
+            class="w-full btn-animate inline-block px-6 py-2 rounded-full bg-gray-700 text-white font-medium"
           >
           Back to Home
           </a>
@@ -75,22 +75,83 @@
     </footer>
 
     <style>
-      @keyframes page-enter {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .animate-page-enter {
-        animation: page-enter 0.8s ease-out forwards;
-      }
-      .btn-animate:hover {
-        @apply scale-105 shadow-lg transition;
-      }
-    </style>
+    @keyframes page-enter {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .animate-page-enter {
+            animation: page-enter 0.8s ease-out forwards;
+          }
+          .btn-animate:hover {
+            @apply scale-105 shadow-lg transition;
+          }
+          @keyframes fade-in {
+                  from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                  }
+                  to {
+                    opacity: 1;
+                    transform: translateY(0);
+                  }
+                }
+
+                @keyframes fade-up {
+                  from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                  }
+                  to {
+                    opacity: 1;
+                    transform: translateY(0);
+                  }
+                }
+
+                @keyframes pulse-glow {
+                  0%,
+                  100% {
+                    transform: scale(1);
+                    box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+                  }
+                  50% {
+                    transform: scale(1.05);
+                    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+                  }
+                }
+
+                .animate-fade-in {
+                  animation: fade-in 1s ease-out forwards;
+                }
+                .animate-fade-up {
+                  animation: fade-up 1s ease-out forwards;
+                }
+
+                .delay-100 {
+                  animation-delay: 0.1s;
+                }
+                .delay-200 {
+                  animation-delay: 0.2s;
+                }
+                .delay-300 {
+                  animation-delay: 0.3s;
+                }
+                .delay-400 {
+                  animation-delay: 0.4s;
+                }
+                .delay-500 {
+                  animation-delay: 0.5s;
+                }
+
+                /* Button hover animation */
+                .btn-animate:hover {
+                  animation: pulse-glow 1s infinite;
+                }
+        </style>
   </body>
 </html>

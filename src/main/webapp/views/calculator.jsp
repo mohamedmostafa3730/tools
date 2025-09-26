@@ -65,7 +65,7 @@
       <!-- Back Button -->
       <div class="mt-8 text-center">
         <a href="/"
-               class="btn-animate inline-block px-6 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium">
+               class="w-full page-link btn-animate inline-block px-6 py-2 rounded-full bg-gray-700 text-white font-medium hover:bg-gray-800 transition btn-animate inline-block px-6 py-3 rounded-full text-white font-medium">
            Back to Home
         </a>
       </div>
