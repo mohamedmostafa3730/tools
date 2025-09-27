@@ -78,7 +78,7 @@
           </p>
           <a
             href="loan"
-            class="pointer-events-none btn-animate inline-block px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:opacity-90 shadow-md transition"
+            class="btn-animate inline-block px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium hover:opacity-90 shadow-md transition"
             >Open Tool</a
           >
         </div>
